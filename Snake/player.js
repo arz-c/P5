@@ -1,9 +1,12 @@
 class Player {
     constructor() {
-        this.body = [createVector(0, 0)];
+        this.s = 1;
+        this.body = [createVector(
+            floor(width / rez / 2) - this.s,
+            floor(height / rez / 2) - this.s)
+        ];
         this.head = this.body[this.body.length - 1];
         this.vel = createVector(0, 0);
-        this.s = 1;
     }
 
     update() {
@@ -26,14 +29,14 @@ class Player {
     }
 
     setDir(x, y) {
-        if(this.body.length == 1) {
-            this.vel.x = x;
-            this.vel.y = y;
-            return;
-        } else {
-            if(this.vel.x != -x) this.vel.x = x;
-            if(this.vel.y != -y) this.vel.y = y;
-        }    
+        if(
+            (this.vel.x != 0 && this.vel.y != 0) || (this.vel.x == x && this.vel.y == y) ||
+            ((this.body.length > 1) && (this.vel.x == -x || this.vel.y == -y))) 
+                return;
+
+        this.vel.x = x;
+        this.vel.y = y;
+        if(move.isLoaded) move.play();
     }
 
     canEat(apple) {
