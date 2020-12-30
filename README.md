@@ -13,7 +13,12 @@ A live EST analog clock - first made the clock a circle, but then turned it into
 ## Sudoku
 A Sudoku player - live solver and board generator are WIP
 
+## Duet x Flappy Bird Parody
+A parody of Duet, a mobile game by Kumobius, and Flappy Bird, a mobile game by Dong Nguyen. The game's concept was thought of by my friend, Josh.
+
+## Wave Game
+A web adaptation of the Java-based "Wave Game" that has its own rep on my GitHub.
+
 ## WIP
 - Pong
-- Wave Game
 - 2D multiplayer simplified League of Legends
