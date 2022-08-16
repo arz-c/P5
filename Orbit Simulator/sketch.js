@@ -35,7 +35,7 @@ function setup() {
 
     // ------------------------------------------------
 
-    let mass = p5.Vector.sub(planet, sun).mag() ** (GRAVITY_POWER - 1) * vel.magSq() / G; // Circular Motion: M = r^(GRAVITY_POWER -1 ) v^2 / G
+    let mass = p5.Vector.sub(planet, sun).mag() ** (-GRAVITY_POWER - 1) * vel.magSq() / G; // Circular Motion: M = r^(GRAVITY_POWER -1 ) v^2 / G
     massSlider = createSlider(mass - mass * 0.5, mass + mass * 0.5, mass, 0);
 
     paused = false;
