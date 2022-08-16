@@ -19,6 +19,9 @@ A parody of Duet, a mobile game by Kumobius, and Flappy Bird, a mobile game by D
 ## Wave Game
 A web adaptation of the Java-based "Wave Game" that has its own rep on my GitHub.
 
+## Orbit Simulator
+A planetary motion simulator with slider for mass of the sun and time delta. Initial velocity of planet can be controlled in the code.
+
 ## WIP
 - Pong
 - 2D multiplayer simplified League of Legends
